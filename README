@@ -1,0 +1,75 @@
+libcue
+------------------------------------------
+Libcue is intended to parse a so called cue sheet from a char string or 
+a file pointer. For handling of the parsed data a convenient API is 
+available.
+
+Runtime requirements:
+  cygwin-1.7.0-51
+  libgcc1-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://sourceforge.net/projects/libcue/
+
+Canonical download:
+  http://sourceforge.net/projects/libcue/files
+
+-------------------------------------------
+
+Build instructions:
+  unpack libcue-1.3.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libcue-1.3.0-X.cygport all
+
+This will create:
+  /usr/src/libcue-1.3.0-X-src.tar.bz2
+  /usr/src/libcue-devel-1.3.0-X.tar.bz2
+  /usr/src/libcue1-1.3.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libcue1)
+  /usr/bin/cygcue-1.dll
+  /usr/share/doc/libcue/AUTHORS
+  /usr/share/doc/libcue/COPYING
+  /usr/share/doc/libcue/ChangeLog
+  /usr/share/doc/libcue/NEWS
+
+(libcue-devel)
+  /usr/include/libcue-1.3/libcue/cd.h
+  /usr/include/libcue-1.3/libcue/cdtext.h
+  /usr/include/libcue-1.3/libcue/libcue.h
+  /usr/include/libcue-1.3/libcue/rem.h
+  /usr/include/libcue-1.3/libcue/time.h
+  /usr/lib/libcue.a
+  /usr/lib/libcue.dll.a
+  /usr/lib/libcue.la
+  /usr/lib/pkgconfig/libcue.pc
+
+------------------
+
+Port Notes:
+
+----- version 1.3.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
