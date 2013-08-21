@@ -1,8 +1,0 @@
-DESCRIPTION="Cue sheet parser library"
-HOMEPAGE="http://sourceforge.net/projects/libcue/"
-SRC_URI="mirror://sourceforge/libcue/${P}.tar.bz2"
-PATCH_URI="1.3.0-no-undefined.patch"
-
-PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
-libcue1_CONTENTS="usr/bin/cygcue-1.dll usr/share/doc/"
-libcue_devel_CONTENTS="usr/include/ usr/lib/"
